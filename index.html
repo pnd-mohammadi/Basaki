@@ -1,41 +1,62 @@
 <!DOCTYPE html>
 
-<html lang="en" >
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <title>Front-End</title>
+  <meta charset="utf-8" />
+  <title>Front-End</title>
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet"  href="assets/css/materialize.css"/>
-    <link rel="stylesheet"  href="assets/css/style.css"/>
+  <link rel="stylesheet" href="assets/css/materialize.css" />
+  <link rel="stylesheet" href="assets/css/util.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
-<h5>Front-End -Basaki</h5>
-    
-    
-    
-     <nav>
+  <nav class="white z-depth-0 top_navbar">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="assets/js/app.js">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+      <a href="#!" class="  hide-on-med-and-up   blue-text">Home</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger blue-text hide-on-med-and-up "><i class="material-icons">menu</i></a>
+      <ul class=" hide-on-small-and-down ">
+        <li><a class="blue-text" href="index.html">Home</a></li>
+        <li><a class="blue-text" href="assets/users.html">users Managers</a></li>
+        <li><a class="blue-text" href="https://www.codeyad.com">Codeyad</a></li>
+        <li><a class="blue-text" href="mobile.html">AQ Fast Learn</a></li>
       </ul>
     </div>
   </nav>
 
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="sass.html">Sass</a></li>
-    <li><a href="badges.html">Components</a></li>
-    <li><a href="assets/js/app.js">Javascript</a></li>
-    <li><a href="mobile.html">Mobile</a></li>
+  <ul class="sidenav  " id="mobile-demo">
+    <li>
+      <div class="user-view">
+        <div class="background ">
+          <img src="assets/images/office-2.webp" class="w_100">
+        </div>
+        <a><img class="circle" src="assets/images/avatar.png"></a>
+        <a><span class="white-text name">qasem-Basaki</span></a>
+        <a><span class="white-text email">qasem_B@gmail.com</span></a>
+      </div>
+    </li>
+    <li><a href="https://www.youtube.com/channel/UC7_WFOLcQ4"><i class="material-icons">insert_link</i>AQ Fast Learn</a>
+    </li>
+    <li><a href="www.codeyad.com"><i class="material-icons">insert_link</i>Codeyad</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a href="index.html" class="waves-effect" href="#!">Home</a></li>
+    <li><a href="assets/users.html" class="waves-effect" href="#!">Users</a></li>
+
   </ul>
-  
-  
- <script src="assets/js/materialize.js"></script>
-    <script src="assets/js/app.js"></script>
+
+  <section class="flex-c-m flex-col sizefull p-r-20 p-l-20 p-t-100">
+    <img src="assets/images/codeyad.png" class="w-full max-w-200 filter_shadow">
+    <a href="style.css" class="waves-effect waves-light btn w-full max-w-250 m-t-10 mb-10 rounded_pill">programming</a>
+    <a href="assets/users.html" class="waves-effect waves-light btn w-full max-w-250 m-t-10 mb-10 rounded_pill">users Managers </a>
+  </section>
+
+  <script src="assets/js/materialize.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
+
 </html>
