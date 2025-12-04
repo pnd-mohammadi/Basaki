@@ -1,8 +1,4 @@
-﻿.w_100 {
-    width: 100% !important;
-}
-
-@media(min-width:600px) {
+﻿@media(min-width:600px) {
     .top_navbar {
         box-shadow: 0 0 50px gray !important;
     }
@@ -16,14 +12,17 @@
         align-items: center !important;
     }
 }
+.users_list_item.active , .users_list_item.active .collapsible-header{
 
-.users_list_item.active {
-    background-color: rgb(128, 128, 128, 0.34);
+    background-color: rgba(190, 185, 185, 0.322);
 }
 
-.users_list_item .users_list_arrow_icon {
-    transition: all 200ms ease;
+table.highlight > tbody > tr:hover {
+
+    background-color: #bbdefb;
 }
+
+
 
 .users_list_item.active .users_list_arrow_icon {
     transform: rotate(180deg);
@@ -42,11 +41,23 @@
     z-index: 999;
 }
 
+
 .add_user_modal{
     position: fixed;
-    height: 70vh;
-    background-color: white;
+    height: 70vh;  
+     background-color:white;
     bottom: 0;
     z-index: 1000;
     right: 0;
+    left : 0;
+    bottom: -70vh;
+}
+.add_user_modal.show{
+    box-shadow: 0 0 10px blue;
+    bottom: 0;
+} 
+
+.user_list_section{
+    height: calc(100vh - 258px);
+    overflow: auto;
 }
