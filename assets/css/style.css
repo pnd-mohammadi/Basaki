@@ -61,3 +61,12 @@ table.highlight > tbody > tr:hover {
     height: calc(100vh - 258px);
     overflow: auto;
 }
+.page_number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
